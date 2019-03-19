@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">XiaoqMemo</string>
+    <string name="create_new">新建备忘录</string>
+    <string name="download">下载云端备忘录</string>
+    <string name="generate_xml">生成本地XML文件</string>
+    <string name="edit_password">修改密码</string>
+    <string name="current_passwd">当前密码</string>
+    <string name="new_passwd">新密码</string>
+    <string name="repeat_passwd">重复输入新密码</string>
+    <string name="title">标题</string>
+    <string name="store">保存</string>
+    <string name="cancel">取消</string>
 </resources>

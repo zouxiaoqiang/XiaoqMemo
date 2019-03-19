@@ -1,28 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_display_memo"
+    <RelativeLayout
+        android:id="@+id/rl_content"
         android:layout_width="match_parent"
-        android:layout_weight="8"
-        android:layout_margin="10dp"
-        android:layout_height="0dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="10">
 
-    <TextView
-        android:id="@+id/tv_create_new"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_display_memo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_create_new"
         android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_margin="10dp"
         android:layout_weight="1"
-        android:layout_height="0dp" />
+        android:text="@string/create_new"
+        android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/tv_download"
+    <Button
+        android:id="@+id/btn_download"
         android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_margin="10dp"
         android:layout_weight="1"
-        android:layout_height="0dp" />
+        android:text="@string/download"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_generate_xml"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="@string/generate_xml"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="@string/edit_password"
+        android:textSize="15sp" />
 
 </LinearLayout>
